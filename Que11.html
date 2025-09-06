@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Ritik</title>
+</head>
+<body>
+   this is my <b>book</b> <br>
+
+   this is a my <i>favourite</i> game <br>
+
+   this is a my <u>father</u>
+
+   <h1>
+    this is a beautiful person:h1
+   </h1>
+
+   <h2>
+    this is a beautiful person:h2
+   </h2>
+
+   <h3>
+    this is a beautiful person:h3
+   </h3>
+
+   <h4>
+    this is a beautiful person:h4
+   </h4>
+
+   <h5>
+    this is a beautiful person:h5
+   </h5>
+
+   <h6>
+    this is a beautiful person:h6
+   </h6>
+
+   <pre>
+    #include<stdio.h>
+        #include<string.h>
+        #include<conio.h>
+        
+        int mystrcmp(char*,char*);
+        int main()
+        {
+            char a[20];
+            char b[20];
+            
+            printf("enter first string:");
+            scanf("%s",&a);
+            
+            printf("enter second string:");
+            scanf("%s",&b);
+            
+           int res=mystrcmp(a,b);
+            printf("%d",res);
+            
+        }
+        int mystrcmp(char* a,char* b)
+        {
+            int i=0;
+            int sum1=0,sum2=0;
+            while(a[i]!='\0')
+            {
+                sum1=sum1+a[i];
+                i++;
+            }
+            i=0;
+            while(b[i]!='\0')
+            {
+                sum2=sum2+b[i];
+                i++;
+            }
+            if(sum1==sum2){
+                return 0;
+            }
+            else
+            if(sum1>sum2)
+            {
+                return 1;
+            }
+            else
+            return -1;
+        
+            
+        }
+          
+   </pre>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Impedit porro fugit, exercitationem praesentium voluptatem
+    quam voluptates architecto unde veniam cupiditate, laboriosam
+    itaque, natus id pariatur illum incidunt blanditiis iste ab.
+
+   </p>
+    
+   h<sub>2</sub>c<sub>2</sub>o<sub>4</sub> <br>
+
+   ROHAN IS 10<sup>th</sup> class student
+
+    
+</body>
+</html>

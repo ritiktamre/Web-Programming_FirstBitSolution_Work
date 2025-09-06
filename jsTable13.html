@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function table()
+        {
+            inp1=document.getElementById("inp1");
+            no=parseInt(inp1.value);
+          res="<table border=1>"
+            for(i=1;i<=10;i++)
+          {
+
+             x=no*i;
+           res=res+`<tr> <td>${no}<td> <td>*<td> <td>${i}<td> <td>=<td> <td>${x}<td> <tr>`
+          }
+          res=res+"</table>"
+        document.getElementById("res").innerHTML=res;
+        console.log("Result"+res)
+        }
+
+        function changecolor(color)
+        {
+            document.getElementById("res").style="color:"+color
+        }
+
+          
+    </script>
+</head>
+<body>
+    <input type="text" id="inp1"><br>
+    <br>
+    <button onclick="table()">printtable</button><br>
+    <span id="res" style="color: aqua;"></span>
+    <button onclick="changecolor('bule')">purple</button>
+     <button onclick="changecolor('green')">green</button><br>
+
+     
+
+ 
+</body>
+</html>

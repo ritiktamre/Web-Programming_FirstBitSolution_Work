@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function factorial()
+        {
+            inp1=document.getElementById("inp1");
+            no=parseInt(inp1.value);
+            {
+                fact=1;
+                for(i=1;i<=no;i++)
+              {
+                fact=fact*i;
+              }
+              document.getElementById("res").innerHTML="Result="+fact;
+              console.log("RESULT:"+fact);
+            }
+        }
+
+       
+    </script>
+</head>
+<body>
+    <input type="text" id="inp1"><br>
+    <button onclick="factorial()">fact</button><br>
+    <span id="res"></span>
+</body>
+</html>

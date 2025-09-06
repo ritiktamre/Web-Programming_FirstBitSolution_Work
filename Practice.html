@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid-container{
+      background-color: aqua;
+      width: 300px;
+      display: grid;
+      border: 2px solid;
+    grid-template-columns: auto auto auto auto ;
+    
+    justify-content: space-between;
+      
+    }
+    .grid-item{
+      width: 50px;
+      height: 50px;
+      background-color:black;
+      border: 2px solid yellow;
+      margin: 5px;
+    }
+    .inpfeild{
+     
+      grid-column: span 4;
+      padding: 30px;
+      margin: 10px;
+    }
+    .grid-item button{
+       border-radius: 20px;
+       margin: 7px;
+       padding: 10px;
+    
+    }
+  </style>
+</head>
+<body>
+     <div class="grid-container">
+      <input type="text" class="inpfeild">
+      <div class="grid-item"><button>1</button></div>
+      <div class="grid-item"><button>2</button></div>
+      <div class="grid-item"><button>3</button></div>
+      <div class="grid-item"><button>C</button></div>
+      <div class="grid-item"><button>4</button></div>
+      <div class="grid-item"><button>5</button></div>
+      <div class="grid-item"><button>6</button></div>
+      <div class="grid-item"><button>AC</button></div>
+      <div class="grid-item"><button>7</button></div>
+      <div class="grid-item"><button>8</button></div>
+      <div class="grid-item"><button>9</button></div>
+      <div class="grid-item"><button>*</button></div>
+      <div class="grid-item"><button>0</button></div>
+      <div class="grid-item"><button>00</button></div>
+      <div class="grid-item"><button>-</button></div>
+      <div class="grid-item"><button>/</button></div>
+      <div class="grid-item"><button>%</button></div>
+      <div class="grid-item"><button>.</button></div>
+      <div class="grid-item"><button>=</button></div>
+      <div class="grid-item"><button>+</button></div>
+     </div>
+</body>
+</html>

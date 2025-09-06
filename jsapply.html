@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+    function apply()  
+    {
+        chk1=document.getElementById("chk1").checked
+         chk2=document.getElementById("chk2").checked
+        
+        document.getElementById("para").style="border:2px  solid yellow";
+         document.getElementById("para").style.color="red"
+    }
+    </script>
+</head>
+<body>
+    <p ID="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam nihil qui praesentium totam voluptatibus beatae, sit, deleniti excepturi ad dignissimos laudantium nesciunt voluptatem eius, ducimus illo esse. Quidem laudantium, fugiat blanditiis accusamus culpa quibusdam itaque reiciendis sequi quaerat molestias sit facere eos vitae inventore nulla quos minus at ab?</p>
+    <input type="checkbox" id="chk1">border
+    <input type="checkbox" id="chk2">Color
+    <br>
+    <input type="checkbox" id="red">red
+    <input type="checkbox" id="green">green
+    <input type="checkbox" id="blue">blue<br>
+
+    <button onclick="apply()">Apply</button><br>
+    
+
+</body>
+</html>

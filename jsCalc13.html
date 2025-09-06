@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+         function calc(op)
+    {
+     inp1=document.getElementById("inp1");
+     inp2=document.getElementById("inp2");
+     no1=parseInt(inp1.value);
+     no2=parseInt(inp2.value);
+
+     if(op=='+')
+     {
+        res=no1+no2;
+     }
+     else
+     if(op=='-')
+     {
+        res=no1-no2;
+     }
+     else
+     if(op=='*')
+     {
+        res=no1*no2;
+     }
+     else
+     if(op=='/')
+     {
+        res=no1/no2;
+     }
+      document.getElementById("res").innerHTML="Result"+res
+     console.log("Result is="+res);
+    }
+    </script>
+    </head>
+    <body>
+        
+ <input type="text" id="inp1" placeholder="Enter number1"><br>
+  <br>
+  <input type="text" id="inp2" placeholder="Enter number2"><br>
+  <br>
+   <button onclick="calc('+')">Add</button>
+    <button onclick="calc('-')">Sub</button>
+    <button onclick="calc('*')">Mul</button>
+    <button onclick="calc('/')">Div</button>
+       <span id="res"></span>
+     </body>
+
+
+</html>

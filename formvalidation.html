@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <script src="formValidation.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded",function process()
+    {
+    document.getElementById("submitbtn").addEventListener(click,function submitForm()
+{
+  if(usernameValidation() && passwordvalidation() && gendervalidation())
+
+
+  document.getElementById("regForm").submit();
+})
+    })
+   
+    </script>
+</head>
+<body>
+  
+
+    <form action="/dummy" id="regForm">
+        <fieldset>
+            <legend>Information form tag</legend>
+
+  <label for="name">Enter name</label>:<input type="text" name="name" id="name" placeholder="Enter the name" onblur="usernameValidation()"><br>
+        <br>
+        <span id="unameerr"></span>
+      <label for="password">Enter password</label>:<input type="password" name="password" id="password" placeholder="enter the password" onblur="passwordvalidation()"><br>
+        <br>
+        <span id="passworderr"></span>
+     <label for="Mobile no">Enter Mobile no</label>:<input type="number" name="Mobile no" id="Mobile no" placeholder="enter the Mobile no"><br>
+        <br>
+      <label for="id">Enter id</label>:<input type="number" name="id" id="id" placeholder="enter the id"><br>
+        <br>
+
+        Enter Email:<input text="text" name="Email" placeholder="enter the Email"><br>
+        <br>
+        hidden:
+        <input type="hidden" name="name" id="name"><br>
+        Gender:
+        <input type="radio" name="gender">male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">other<br>
+        <br>
+
+        Courses:
+        <input type="checkbox" name="courses">C
+        <input type="checkbox" name="courses">C++
+        <input type="checkbox" name="courses">Java
+        <input type="checkbox" name="courses">CPP<br>
+        <br>
+
+        date:
+        <input type="date"><br>
+        <br>
+
+        color:
+        <input type="color"><br>
+        <br>
+       volume:
+        <audio src="music.mp3" controls></audio><br>
+        <br>
+        <video src="video.mp3" controls></video><br>
+        <br>
+
+        week:
+        <input type="week" name="week"><br>
+        <br>
+
+        month:
+        <input type="month" name="month"><br>
+        <br>
+
+        time:
+        <input type="time"><br>
+        <br>
+
+        image:
+        <img src="/Fbs image.jpg" height="100px" width="100px"><br>
+        <br>
+        <input type="button" value="submit" onclick="sublitForm()">
+        </fieldset>
+    </form>
+     
+</body>
+</html>

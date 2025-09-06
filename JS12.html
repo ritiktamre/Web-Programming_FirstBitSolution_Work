@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    console.log("RADHE RADHE");
+    console.log("JAI SHRI SHYAM");
+     
+    function addition()
+    {
+     inp1=document.getElementById("inp1");
+     inp2=document.getElementById("inp2");
+     no1=parseInt(inp1.value);
+     no2=parseInt(inp2.value);
+
+     res=no1+no2;
+     document.getElementById("res").innerHTML="Result"+res
+     console.log("Result is="+res);
+    }
+
+    function subtraction()
+    {
+     inp1=document.getElementById("inp1");
+     inp2=document.getElementById("inp2");
+     no1=parseInt(inp1.value);
+     no2=parseInt(inp2.value);
+
+     res=no1-no2;
+     document.getElementById("res").innerHTML="Result"+res
+     console.log("Result is="+res);
+    }
+
+    function multiplication()
+    {
+     inp1=document.getElementById("inp1");
+     inp2=document.getElementById("inp2");
+     no1=parseInt(inp1.value);
+     no2=parseInt(inp2.value);
+
+     res=no1*no2;
+     document.getElementById("res").innerHTML="Result"+res
+     console.log("Result is="+res);
+    }
+
+    function division()
+    {
+     inp1=document.getElementById("inp1");
+     inp2=document.getElementById("inp2");
+     no1=parseInt(inp1.value);
+     no2=parseInt(inp2.value);
+
+     res=no1/no2;
+     document.getElementById("res").innerHTML="Result"+res
+     console.log("Result is="+res);
+    }
+  </script>
+</head>
+<body>
+
+  <input type="text" id="inp1"><br>
+  <br>
+  <input type="text" id="inp2"><br>
+  <br>
+  <button onclick="addition()">Add</button>
+    <button onclick="subtraction()">Sub</button>
+    <button onclick="multiplication()">Mul</button>
+    <button onclick="division()">Div</button>
+  <span id="res"></span>
+  
+  
+</body>
+</html>

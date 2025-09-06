@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+          width: 300px;
+          display: grid;
+         
+          grid-template-columns: auto auto auto ;
+          border: 2px solid yellow;
+          justify-content: space-between;
+          background-color: darkkhaki;
+          margin: 5px;
+          border: 2px solid blue;
+        }
+        .grid-item{
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+        }
+        .inpfeild{
+            grid-column: span 3;
+            padding: 30px;
+            margin: 10px;
+            background-color: bisque;
+        }.grid-item button{
+            border-radius: 20px;
+            padding: 15px;
+            margin: 5px;
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container" >
+    <input type="text" class="inpfeild">
+    <div class="grid-item"><button>1</button></div>
+    <div class="grid-item"><button>2</button></div> 
+    <div class="grid-item"><button>3</button></div>
+    <div class="grid-item"><button>4</button></div>
+    <div class="grid-item"><button>5</button></div>
+    <div class="grid-item"><button>6</button></div>
+    <div class="grid-item"><button>7</button></div>
+    <div class="grid-item"><button>8</button></div>
+    <div class="grid-item"><button>9</button></div>
+    <div class="grid-item"><button>0</button></div>
+    <div class="grid-item"><button>+</button></div>
+    <div class="grid-item"><button>=</button></div>  
+    </div>
+    
+</body>
+</html>
